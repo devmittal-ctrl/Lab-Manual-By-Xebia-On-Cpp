@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // wholesale supplier bill mechanism
+   int n;
+   float j;
+   cout<<"enter the total number of the items : ";
+   cin>>n;
+   cout<<"enter the amount of the unit : ";
+   cin>>j;
+   if(n>1000){
+    cout<<"you got a additioanl 10 %% discount"<<endl<<"now your bill is : "<<(n*j)*0.9;
+   }
+   else cout<<"now your bill is : "<<(n*j);
+
+    return 0;
+}
