@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    // discount on the bill amount
+    int n;
+    float p,t;
+    cout<<"enter the number of the items : ";
+    cin>>n;
+    cout<<"enter the unit price of the item selected : ";
+    cin>>p;
+    t=p*n;
+    cout<<"the bill amount is : "<<t;
+    cout<<endl<<"you got a discount of 20 %%,\nnow your final bill amount is  : "<<t*0.8;
+    return 0;
+}
