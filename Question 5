@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+    // swapping two numbers using different techniques
+    int n,m;
+    cout<<"enter the first number : ";
+    cin>>n;
+    cout<<"enter the second number : ";
+    cin>>m;
+    cout<<"swapping numbers by the addition : "<<endl;
+    n=n+m;
+    m=n-m;
+    n=n-m;
+    cout<<"after swapping : "<<n<<"\t"<<m;
+    cout<<endl<<"swapping numbers by bitwise operator : "<<endl;
+    n=n^m;
+    m=n^m;
+    n=n^m;
+    cout<<"after swapping : "<<n<<"\t"<<m;
+    return 0;
+}
