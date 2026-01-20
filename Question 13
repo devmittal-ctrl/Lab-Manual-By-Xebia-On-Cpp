@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // roots of the quadratic solution 
+   float n,m,b;
+   cout<<"the form of the quadratic equation is : ax^2 +bx + c "<<endl;
+   cout<<"enter the value of the the terms in the quadratic equation respectively : ";
+   cin>>n>>m>>b;
+   float desi=m*m-(4*n*b);
+   if(desi>0) cout<<"the roots are the real but unequal";
+   else if(desi==0) cout<<"the roots are real and equal";
+   else if(desi<0) cout<<"the roots are imaginary";
+   return 0;
+}
