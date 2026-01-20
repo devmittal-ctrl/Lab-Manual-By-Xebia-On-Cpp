@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // salary checking 
+   int n;
+   float k,h;
+   cout<<"enter the number of the employes : ";
+   cin>>n;
+   cout<<"their basic salary : ";
+   cin>>h;
+   k=h*0.12;
+   cout<<"the bonus amount is : "<<n*k<<endl;
+   cout<<"net salary : (each)"<<h+k;
+   return 0;
+}
