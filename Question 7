@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+    // identifying the maximum along all the 3 
+    int max=INT_MIN;
+    for(int i=1;i<=3;i++){
+        int a;
+        cout<<"enter the marks for the "<<i<<" th person : ";
+        cin>>a;
+        if(a>max){
+            max=a;
+    }
+}
+cout<<"the maximum number is : "<<max;
+    return 0;
+}
