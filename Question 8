@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+    // id checking beep sound 
+    int n;
+    cout<<"enter the customer id : ";
+    cin>>n;
+    if(n%3==0) cout<<"Buzz";
+    if(n%5==0) cout<<"Fuzz";
+    return 0;
+}
