@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+    // finding the area of the circle
+    float r;
+    cout<<"enter the radius of the circular fountain : ";
+    cin>>r;
+    cout<<"the area of the circular fountain : "<<(3.14*r*r);
+    return 0;
+}
