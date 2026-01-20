@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // classification of traingles on the basics sides
+   int n,m,b;
+   cout<<"enter the first side of the traingle : ";
+   cin>>n;
+   cout<<"enter the second side of the traingle : ";
+   cin>>m;
+   cout<<"enter the third side of the traingle : ";
+   cin>>b;
+   if(n==m && n==b && b==m) cout<<"equilateral traingle";
+   else if(n==m || n==b || m==b) cout<<"isoscles traingle";
+   else cout<<"scalene traingle";
+    return 0;
+}
