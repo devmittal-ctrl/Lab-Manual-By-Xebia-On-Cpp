@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+    // a programme to implement the solution on the calcius and farenite conversion 
+    int n;
+    cout<<"what you want to do :"<<endl<<"press : 1 : for c to f\npress : 2 : for f to c\n";
+    cout<<"response : ";
+    cin>>n;
+    switch(n){
+        case 1:{
+            float y;
+            cout<<"enter the value in C which have to be converted into F : ";
+            cin>>y;
+            cout<<"the final conversion is : "<<(y*9/5)+32;
+            break;
+        }
+          case 2:{
+            float y;
+            cout<<"enter the value in F which have to be converted into C : ";
+            cin>>y;
+            cout<<"the final conversion is : "<<(y-32)*5/9;
+            break;
+        }
+    }
+    return 0;
+}
