@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+    float n1,n2,n3;
+    cout<<"enter the marks for the student 1 : ";
+    cin>>n1;
+    cout<<"enter the marks for the student 2 : ";
+    cin>>n2;
+    cout<<"enter the marks for the student 3 : ";
+    cin>>n3;
+    cout<<endl<<"the average of their marks are : "<<(n1+n2+n3)/3;
+
+    return 0;
+}
