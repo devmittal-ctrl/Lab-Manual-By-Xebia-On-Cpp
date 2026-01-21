@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // the pattern :
+   /* 1 2 3 4 5
+      1 2 3 4 5
+   */
+  int n;
+  cout<<"enter how long you want to run the pattern : ";
+  cin>>n;
+  for(int i=1;i<=n;i++){
+   for(int i=1;i<=n;i++){
+      cout<<i<<" ";
+   }
+   cout<<endl;
+  }
+
+   return 0;
+}
