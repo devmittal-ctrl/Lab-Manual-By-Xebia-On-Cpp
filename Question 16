@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // checking the number for the prime number or not 
+   int n;
+   cout<<"enter the number : ";
+   cin>>n;
+   int count =0;
+   for(int i=2;i<n;i++){
+      if(n%i==0) count++;
+   }
+   if(count==0) cout<<"the prime number ";
+   else cout<<"the composite number ";
+
+   return 0;
+}
