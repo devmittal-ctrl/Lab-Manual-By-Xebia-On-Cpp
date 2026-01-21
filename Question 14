@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // calculator based on the basic operation 
+   int n;
+   float h,m;
+   cout<<"welcome to the calculator : ";
+   cout<<endl<<"here we are going to perform the basic operation : \npress 1 : addition\npress 2 : substraction\n";
+   cout<<"press 3 :multiplication\npress 4 : division";
+   cout<<endl<<"response : ";
+   cin>>n;
+   cout<<"enter two numbers respectively : ";
+   cin>>h>>m;
+   switch(n){
+      case 1 : cout<<"the addition : "<<h+m; break;
+      case 2 : cout<<"\nthe substraction : "<<h-m;break;
+      case 3 : cout<<"\nthe multiplication : "<<h*m;break;
+      case 4 : cout<<"\nthe division : "<<h/m;break;
+   }
+   return 0;
+}
