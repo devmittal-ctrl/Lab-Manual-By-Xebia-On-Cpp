@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+   // finding the largest number from the set of n numbers
+   int max=INT_MIN;
+   int n;
+   cout<<"enter from how many numbers you want to enter : ";
+   cin>>n;
+   for(int i=1;i<=n;i++){
+      int a;
+      cout<<"enter the "<<i<<" th number : ";
+      cin>>a;
+      if(a>max) max=a;      
+   }
+   cout<<"the maximum number is : "<<max;
+   return 0;
+}
