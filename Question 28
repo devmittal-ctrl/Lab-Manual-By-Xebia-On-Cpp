@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+  // the maximum price list of the array 
+  int n;
+  int mx=INT_MIN;
+  cout<<"enter how many elements you want to enter in the array : ";
+  cin>>n;
+  int arr[n];
+  for(int i=0;i<n;i++){
+    cout<<"the "<<i+1<<" th element of the array is the : ";
+    cin>>arr[i];
+  }
+  for(int y=0;y<n;y++){
+    if(arr[y]>mx) mx=arr[y];
+  }
+  cout<<"the maximum number among the array : "<<mx;
+   return 0;
+}
