@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+  // the report card of the student 
+  int total=0;
+  float per;
+  for(int i=1;i<=5;i++){
+    int a=0;
+    cout<<"enter the marks for the "<<i<<" th subject : ";
+    cin>>a;
+    total+=a;
+    per=total/5;
+  }
+  cout<<endl<<"the total marks of the student is : "<<total;
+  cout<<endl<<"the percentage of the student is : "<<per;
+   return 0;
+}
