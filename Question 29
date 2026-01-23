@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+  // the sum of the odd and the even numbers
+  int n;
+  int sume=0,sumo=0;
+  cout<<"enter how many elements you want to enter in the array : ";
+  cin>>n;
+  int arr[n];
+  for(int i=0;i<n;i++){
+    cout<<"the "<<i+1<<" th element of the array is the : ";
+    cin>>arr[i];
+  }
+  for(int y=0;y<n;y++){
+    if(arr[y]%2==0) sume+=arr[y];
+    else if(arr[y]%2!=0) sumo+=arr[y];
+  }
+  cout<<"the sum of the even number of the arry is : "<<sume;
+  cout<<"\nthe sum of the odd number of the arry is : "<<sumo;
+
+   return 0;
+}
