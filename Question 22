@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main(){
+  // the pattern 
+  /* 
+  ********
+  *      *
+  *      *
+  *      *
+  *      *
+  ********  
+  */
+ int n;
+ cout<<"enter how long you want to run the pattern : ";
+ cin>>n;
+ cout<<"*******";
+ for(int i=1;i<=n;i++){
+   for(int h=1;h<=n;h++){
+      if(h>1 && h<n) cout<<" ";
+      else cout<<"*";
+   }
+   cout<<endl;
+ }
+  cout<<"*******";
+ 
+
+   return 0;
+}
