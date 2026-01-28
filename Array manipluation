@@ -1,0 +1,24 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+  // array manipulation
+  int n;
+  cout<<"enter the number of the elements you want to enter in the array :: ";
+  cin>>n;
+  int arr[n];
+  for(int i=0;i<n;i++){
+    cout<<"enter the elemets for the "<<i<<" th index value ::";
+    cin>>arr[i];
+  }
+  int count=0;
+  for(int i=0;i<n;i++){
+    for(int j=i+1;j<n;j++){
+   if(arr[i]==arr[j]) arr[i]=arr[j]=-1;
+    }
+  }
+  for(int i=0;i<n;i++){
+    if(arr[i]>0) cout<<arr[i];
+  }
+   return 0;
+}
