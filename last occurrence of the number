@@ -1,0 +1,23 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+  // the concepts of the vectors
+  // last occurance of the number 
+  int n;
+  cout<<"tell the numbers of the elements for the array :: ";
+  cin>>n;
+  int tar,arr[n];
+  cout<<"set the target value :: ";
+  cin>>tar;
+  for(int i=0;i<n;i++){
+    cout<<"enter the "<<i<<" th index of the array :: ";
+    cin>>arr[i];
+  }
+  for(int i=n-1;i>=0;i--){
+    if(arr[i]==tar) {cout<<"the last occurance of the number is :: "<<i;break;}
+    else cout<<"not found ";
+  }
+
+   return 0;
+}
