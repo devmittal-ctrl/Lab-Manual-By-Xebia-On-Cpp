@@ -1,0 +1,31 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+  // sorting the array consisting up of 1 and 0 only
+  int n;
+  cout<<"enter the number of the array you want to enter in the array : ";
+  cin>>n;
+  int arr[n];
+  for(int i=0;i<n;i++){
+    cout<<"enter the "<<i<<" th index element of the array : ";
+    cin>>arr[i];
+    }
+    int count0=0,count1=0;
+    for(int y=0;y<n;y++){
+      if(arr[y]==0) count0++;
+      if(arr[y]==1) count1++;
+    }
+    for(int y=0;y<count0;y++){
+      arr[y]=0;
+    }
+    for(int y=count0;y<n;y++){
+      arr[y]=1;
+    }
+    cout<<"finally your soted array is :: "<<endl;
+    for(int y=0;y<n;y++){
+      cout<<arr[y]<<" ";
+    }
+  
+   return 0;
+}
