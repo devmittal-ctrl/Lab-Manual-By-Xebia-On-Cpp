@@ -1,0 +1,30 @@
+#include<iostream> 
+#include<math.h>
+using namespace std;
+int main() {
+    // strong password policies of the web application
+    string s;
+    cout<<"enter the password \nRESPONSE : ";
+    cin>>s;
+    // now conditions
+    int countsa=0,countn=0,countla=0,countsc=0;
+    for(int i=0;i<s.length();i++){
+        if(s[i]>='a' && s[i]<='z') {
+            countsa++;
+        }
+        if(s[i]>='A' && s[i]<='Z') {
+            countla++;
+        }
+        if(s[i]>='0' && s[i]<='9') {
+            countn++;
+        }
+        if(s[i]=='@' || s[i]=='#' || s[i]=='$' || s[i]=='%' || s[i]=='&' || s[i]=='*' || s[i]=='!') {
+            countsc++;
+        }
+    }
+    if(countla<1) cout<<"you must have to type atleast one large alphabet "<<endl;
+    if(countsa<1) cout<<"you must have to type atleast one small alphabet "<<endl;
+    if(countn<1) cout<<"you must have to type atleast one number "<<endl;
+    if(countsc<1) cout<<"you must have to type atleast one special character "<<endl;
+    return 0;
+}
