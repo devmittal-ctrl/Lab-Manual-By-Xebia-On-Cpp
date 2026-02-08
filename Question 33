@@ -1,0 +1,18 @@
+#include<iostream> 
+#include<math.h>
+using namespace std;
+int main() {
+    // checking for the largest and second largest number 
+    int arr[5];
+    int max=INT_MIN,smax=INT_MIN;
+    for(int i=0;i<5;i++){
+        cout<<"enter the "<<i<<" th index element : ";
+        cin>>arr[i];
+        if(arr[i]>max){
+            smax=max;
+            max=arr[i];
+        }
+    }
+    cout<<"the largest number is : "<<max<<endl<<"the second largest number is : "<<smax;
+    return 0;
+}
