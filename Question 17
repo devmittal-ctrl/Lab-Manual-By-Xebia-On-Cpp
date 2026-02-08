@@ -1,0 +1,28 @@
+#include<iostream> 
+#include<math.h>
+using namespace std;
+int main() {
+    // checking for the armstrong number 
+    int n;
+    cout<<"enter the number you want to check : ";
+    cin>>n;
+    int ogn=n;
+    // firstly counting the number of te digits 
+    int countd=0;
+    while(n>0){
+        n/=10;
+        countd++;
+    }
+    // now the main condtion fo the armstrong numbers 
+    int ans=0;
+    n=ogn;
+    while(n>0){
+        int rem=n%10;
+        ans+=pow(rem,countd);
+        n/=10;
+    }
+    if(ans==ogn) cout<<"yes the number is a armstrong number ";
+    else cout<<"the number id not a armstrong number ";
+
+    return 0;
+}
