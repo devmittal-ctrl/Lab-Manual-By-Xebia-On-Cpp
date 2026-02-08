@@ -1,0 +1,16 @@
+#include<iostream> 
+#include<math.h>
+using namespace std;
+int main() {
+    // to accept marks in 5 subjects for 3 students, then display
+    int arr[3][5];
+    for(int s=0;s<3;s++){
+        for(int c=0;c<5;c++){
+            cout<<" enter the marks for the "<<s+1<<" th students in "<<c+1<<" th subject : ";
+            cin>>arr[s][c];
+        }
+    }
+    cout<<"the marks of second subject and first student : "<<arr[0][1]<<endl;
+    cout<<"the marks of fifth subject and third student : "<<arr[2][4];
+    return 0;
+}
