@@ -1,0 +1,41 @@
+#include<iostream> 
+#include<math.h>
+using namespace std;
+int main() {
+    // to accept marks in 5 subjects for 3 students, then display
+    int arr[3][3];
+    int brr[3][3];
+    int sum1=0,sum2=0;
+    cout<<"the first matrix ................ "<<endl;
+    for(int s=0;s<3;s++){
+        for(int c=0;c<3;c++){
+            cout<<" enter the number for the "<<s+1<<" th row "<<c+1<<" th column : ";
+            cin>>arr[s][c];
+            sum1+=arr[s][c];
+        }
+    }
+     for(int s=0;s<3;s++){
+        for(int c=0;c<3;c++){
+            cout<<arr[s][c]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"the second matrix ................ "<<endl;
+    for(int s=0;s<3;s++){
+        for(int c=0;c<3;c++){
+            cout<<" enter the number for the "<<s+1<<" th row "<<c+1<<" th column : ";
+            cin>>brr[s][c];
+            sum2+=brr[s][c];
+        }
+    }
+    for(int s=0;s<3;s++){
+        for(int c=0;c<3;c++){
+             cout<<brr[s][c]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<endl<<"the sum of the first array is : "<<sum1;
+      cout<<endl<<"the sum of the second array is : "<<sum2;
+
+    return 0;
+}
