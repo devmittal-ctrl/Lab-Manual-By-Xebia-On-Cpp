@@ -1,0 +1,14 @@
+#include<iostream> 
+#include<math.h>
+using namespace std;
+int main() {
+    // counting for numbers divisible by 3 and 5
+    int arr[5],count=0;
+    for(int i=0;i<5;i++){
+        cout<<"enter the "<<i<<" th index element : ";
+        cin>>arr[i];
+        if(arr[i]%3==0 && arr[i]%5==0) count++;
+    }
+    cout<<"the total number are : "<<count;
+    return 0;
+}
