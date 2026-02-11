@@ -1,0 +1,25 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+void findMinMax(int arr[],int size,int &minval,int &maxval){
+   maxval=INT_MIN;
+   minval=INT_MAX;
+   for(int j=0;j<size;j++){
+      if(arr[j]>maxval) maxval=arr[j];
+      if(arr[j]<minval) minval=arr[j];
+   }
+   cout<<"minimum : "<<minval<<"\tmaximun : "<<maxval;
+}
+int main(){
+   // minium and the maximun in array 
+   int x;
+   cout<<"integer : ";
+   cin>>x;
+   int arr[x];
+   for(int j=0;j<x;j++){
+      cin>>arr[j];
+   }
+   int minval=0,maxval=0;
+   findMinMax(arr,x,minval,maxval);
+   return 0;
+}
